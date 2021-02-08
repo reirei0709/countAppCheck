@@ -4,45 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/twentygame"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="187dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="106dp"
         android:text="0"
-        android:textSize="36sp"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/plus2Button"
+        app:layout_constraintEnd_toEndOf="@+id/plus2Button" />
+
+    <Button
+        android:id="@+id/plus4Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+4"
+        app:layout_constraintEnd_toStartOf="@+id/plus5Button"
+        app:layout_constraintStart_toEndOf="@+id/minusButton"
+        app:layout_constraintTop_toTopOf="@+id/plus5Button" />
+
+    <Button
+        android:id="@+id/plus3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="+3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/plus2Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/plus2Button" />
+
+    <Button
+        android:id="@+id/plus5Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="54dp"
+        android:text="+5"
+        app:layout_constraintBottom_toTopOf="@+id/kakeruButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plus4Button" />
+
+    <Button
+        android:id="@+id/kakeruButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:text="×"
+        app:layout_constraintBaseline_toBaselineOf="@+id/specialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/specialButton" />
+
+    <Button
+        android:id="@+id/plus2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="+2"
+        app:layout_constraintBottom_toTopOf="@+id/plus5Button"
+        app:layout_constraintEnd_toStartOf="@+id/plus3Button"
+        app:layout_constraintStart_toEndOf="@+id/plusButton" />
+
+    <Button
+        android:id="@+id/specialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:text="special"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/kakeruButton"
+        app:layout_constraintStart_toEndOf="@+id/clearButton" />
 
     <Button
         android:id="@+id/plusButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="＋"
-        app:layout_constraintBottom_toTopOf="@+id/minusButton"
-        app:layout_constraintStart_toStartOf="@+id/minusButton" />
-
-    <Button
-        android:id="@+id/minusButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="46dp"
-        android:text="－"
-        app:layout_constraintBottom_toTopOf="@+id/clearButton"
-        app:layout_constraintStart_toStartOf="@+id/clearButton" />
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="2dp"
+        android:text="+1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/plus2Button"
+        app:layout_constraintEnd_toStartOf="@+id/plus2Button"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/clearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="65dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="2dp"
         android:text="clear"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/specialButton"
+        app:layout_constraintEnd_toStartOf="@+id/specialButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="1dp"
+        android:text="－1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/plus4Button"
+        app:layout_constraintEnd_toStartOf="@+id/plus4Button"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
