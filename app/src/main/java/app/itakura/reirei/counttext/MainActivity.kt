@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                 clearButton.text = "clear"
                 count = 0
                 textView.text = count.toString()
-                textView.setTextColor(Color.WHITE)
+                textView.setTextColor(Color.rgb(156,39,176))
                 bombAnimation.visibility = View.INVISIBLE
 
             }
@@ -131,7 +131,7 @@ class MainActivity : AppCompatActivity() {
                 clearButton.text = "clear"
                 count = 0
                 textView.text = count.toString()
-                textView.setTextColor(Color.WHITE)
+                textView.setTextColor(Color.rgb(156,39,176))
                 bombAnimation.visibility = View.INVISIBLE
 
             }
@@ -192,7 +192,7 @@ class MainActivity : AppCompatActivity() {
                 clearButton.text = "clear"
                 count = 0
                 textView.text = count.toString()
-                textView.setTextColor(Color.WHITE)
+                textView.setTextColor(Color.rgb(156,39,176))
                 bombAnimation.visibility = View.INVISIBLE
 
             }
@@ -252,7 +252,7 @@ class MainActivity : AppCompatActivity() {
                 clearButton.text = "clear"
                 count = 0
                 textView.text = count.toString()
-                textView.setTextColor(Color.WHITE)
+                textView.setTextColor(Color.rgb(156,39,176))
                 bombAnimation.visibility = View.INVISIBLE
 
             }
@@ -290,7 +290,7 @@ class MainActivity : AppCompatActivity() {
                 plus4Button.visibility = View.INVISIBLE
                 plus5Button.visibility = View.INVISIBLE
                 minusButton.visibility = View.INVISIBLE
-                clearButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
                 kakeruButton.visibility = View.INVISIBLE
                 bombAnimation.visibility = View.VISIBLE
                 clearButton.text = "もう一回！"
@@ -311,7 +311,7 @@ class MainActivity : AppCompatActivity() {
                 specialButton.text = "special"
                 count = 0
                 textView.text = count.toString()
-                textView.setTextColor(Color.WHITE)
+                textView.setTextColor(Color.rgb(156,39,176))
                 bombAnimation.visibility = View.INVISIBLE
 
             }
@@ -386,7 +386,7 @@ class MainActivity : AppCompatActivity() {
                 clearButton.text = "clear"
                 count = 0
                 textView.text = count.toString()
-                textView.setTextColor(Color.WHITE)
+                textView.setTextColor(Color.rgb(156,39,176))
                 bombAnimation.visibility = View.INVISIBLE
 
             }
@@ -450,7 +450,7 @@ class MainActivity : AppCompatActivity() {
                 clearButton.text = "clear"
                 count = 0
                 textView.text = count.toString()
-                textView.setTextColor(Color.WHITE)
+                textView.setTextColor(Color.rgb(156,39,176))
                 bombAnimation.visibility = View.INVISIBLE
 
             }

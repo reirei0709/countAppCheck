@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/twentygame"
+    android:background="@drawable/newpage"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="240dp"
         android:text="0"
-        android:textColor="#FFFFFF"
+        android:textColor="#9C27B0"
         android:textSize="120sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,26 +23,23 @@
         android:id="@+id/plus4Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#E33570"
-        android:textColor="#FFFFFF"
         android:text="+4"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/specialButton"
         app:layout_constraintEnd_toStartOf="@+id/plus5Button"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toEndOf="@+id/minusButton" />
 
     <Button
         android:id="@+id/plus3Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#E33570"
-        android:textColor="#FFFFFF"
         android:text="+3"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/plus5Button"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -50,11 +47,11 @@
         android:id="@+id/plus5Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#E33570"
-        android:textColor="#FFFFFF"
         android:text="+5"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/kakeruButton"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -62,9 +59,9 @@
         android:id="@+id/kakeruButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="120dp"
-        android:backgroundTint="#03A9F4"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#9C27B0"
         android:text="×"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,12 +71,10 @@
         android:id="@+id/plus2Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#E33570"
-        android:textColor="#FFFFFF"
         android:text="+2"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/plus4Button"
         app:layout_constraintEnd_toStartOf="@+id/plus3Button"
         app:layout_constraintStart_toEndOf="@+id/plusButton" />
@@ -88,26 +83,23 @@
         android:id="@+id/specialButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="120dp"
-        android:backgroundTint="#FFEB3B"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#9C27B0"
         android:text="special"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/kakeruButton"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toEndOf="@+id/clearButton" />
 
     <Button
         android:id="@+id/plusButton"
-        android:layout_width="wrap_content"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#E33570"
-        android:textColor="#FFFFFF"
         android:text="+1"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/minusButton"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -115,8 +107,8 @@
         android:id="@+id/clearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="100dp"
         android:backgroundTint="#FFFFFF"
         android:text="clear"
         android:textColor="#E91E63"
@@ -127,11 +119,11 @@
         android:id="@+id/minusButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="60dp"
-        android:backgroundTint="#E33570"
-        android:textColor="#FFFFFF"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#9C27B0"
         android:text="－1"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/clearButton"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -139,18 +131,14 @@
         android:id="@+id/bombAnimation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/bomb" />
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
