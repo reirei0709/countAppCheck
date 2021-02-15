@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         var random : Random = Random
 
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -25,11 +26,119 @@ class MainActivity : AppCompatActivity() {
             count += 1
             textView.text = count.toString()
 
+            if (count >= 18) {
+                Log.d("count", count.toString())
+                textView.setTextColor(Color.RED)
+
+            }
+            if(count == 19){
+                Log.d("count", count.toString())
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                clearButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+
+            }
+            if(count >= 20){
+                textView.textSize = 150.0F
+                plusButton.visibility = View.INVISIBLE
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                bombAnimation.visibility = View.VISIBLE
+                clearButton.text = "もう一回！"
+              clearButton.visibility = View.VISIBLE
+
+            }
+
+
+            clearButton.setOnClickListener {
+                plusButton.visibility = View.VISIBLE
+                plus2Button.visibility = View.VISIBLE
+                plus3Button.visibility = View.VISIBLE
+                plus4Button.visibility = View.VISIBLE
+                plus5Button.visibility = View.VISIBLE
+                minusButton.visibility = View.VISIBLE
+                specialButton.visibility = View.VISIBLE
+                kakeruButton.visibility = View.VISIBLE
+                clearButton.text = "clear"
+                count = 0
+                textView.text = count.toString()
+                textView.setTextColor(Color.WHITE)
+                bombAnimation.visibility = View.INVISIBLE
+
+            }
+
+
+
         }
 
         plus2Button.setOnClickListener{
             count += 2
             textView.text = count.toString()
+
+            if (count >= 18) {
+                Log.d("count", count.toString())
+                textView.setTextColor(Color.RED)
+
+            }
+            if(count == 19){
+                Log.d("count", count.toString())
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                clearButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+
+            }
+            if(count >= 20){
+                textView.textSize = 150.0F
+                plusButton.visibility = View.INVISIBLE
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                bombAnimation.visibility = View.VISIBLE
+                clearButton.text = "もう一回！"
+                clearButton.visibility = View.VISIBLE
+
+            }
+
+
+            clearButton.setOnClickListener {
+                plusButton.visibility = View.VISIBLE
+                plus2Button.visibility = View.VISIBLE
+                plus3Button.visibility = View.VISIBLE
+                plus4Button.visibility = View.VISIBLE
+                plus5Button.visibility = View.VISIBLE
+                minusButton.visibility = View.VISIBLE
+                specialButton.visibility = View.VISIBLE
+                kakeruButton.visibility = View.VISIBLE
+                clearButton.text = "clear"
+                count = 0
+                textView.text = count.toString()
+                textView.setTextColor(Color.WHITE)
+                bombAnimation.visibility = View.INVISIBLE
+
+            }
+
+
+
+
 
         }
 
@@ -37,11 +146,117 @@ class MainActivity : AppCompatActivity() {
             count += 3
             textView.text = count.toString()
 
+            if (count >= 18) {
+                Log.d("count", count.toString())
+                textView.setTextColor(Color.RED)
+
+            }
+            if(count == 19){
+                Log.d("count", count.toString())
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                clearButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+
+            }
+            if(count >= 20){
+                textView.textSize = 150.0F
+                plusButton.visibility = View.INVISIBLE
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                bombAnimation.visibility = View.VISIBLE
+                clearButton.text = "もう一回！"
+                clearButton.visibility = View.VISIBLE
+
+            }
+
+
+            clearButton.setOnClickListener {
+                plusButton.visibility = View.VISIBLE
+                plus2Button.visibility = View.VISIBLE
+                plus3Button.visibility = View.VISIBLE
+                plus4Button.visibility = View.VISIBLE
+                plus5Button.visibility = View.VISIBLE
+                minusButton.visibility = View.VISIBLE
+                specialButton.visibility = View.VISIBLE
+                kakeruButton.visibility = View.VISIBLE
+                clearButton.text = "clear"
+                count = 0
+                textView.text = count.toString()
+                textView.setTextColor(Color.WHITE)
+                bombAnimation.visibility = View.INVISIBLE
+
+            }
+
+
+
+
         }
 
         plus4Button.setOnClickListener{
             count += 4
             textView.text = count.toString()
+
+            if (count >= 18) {
+                Log.d("count", count.toString())
+                textView.setTextColor(Color.RED)
+
+            }
+            if(count == 19){
+                Log.d("count", count.toString())
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                clearButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+
+            }
+            if(count >= 20){
+                textView.textSize = 150.0F
+                plusButton.visibility = View.INVISIBLE
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                bombAnimation.visibility = View.VISIBLE
+                clearButton.text = "もう一回！"
+                clearButton.visibility = View.VISIBLE
+
+            }
+
+
+            clearButton.setOnClickListener {
+                plusButton.visibility = View.VISIBLE
+                plus2Button.visibility = View.VISIBLE
+                plus3Button.visibility = View.VISIBLE
+                plus4Button.visibility = View.VISIBLE
+                plus5Button.visibility = View.VISIBLE
+                minusButton.visibility = View.VISIBLE
+                specialButton.visibility = View.VISIBLE
+                kakeruButton.visibility = View.VISIBLE
+                clearButton.text = "clear"
+                count = 0
+                textView.text = count.toString()
+                textView.setTextColor(Color.WHITE)
+                bombAnimation.visibility = View.INVISIBLE
+
+            }
+
 
         }
 
@@ -49,12 +264,68 @@ class MainActivity : AppCompatActivity() {
             count += 5
             textView.text = count.toString()
 
+            if (count >= 18) {
+                Log.d("count", count.toString())
+                textView.setTextColor(Color.RED)
+
+            }
+            if(count == 19){
+                Log.d("count", count.toString())
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                clearButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+
+            }
+            if(count >= 20){
+                textView.textSize = 150.0F
+                plusButton.visibility = View.INVISIBLE
+                plusButton.visibility = View.INVISIBLE
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                clearButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                bombAnimation.visibility = View.VISIBLE
+                clearButton.text = "もう一回！"
+                clearButton.visibility = View.VISIBLE
+
+            }
+
+
+            clearButton.setOnClickListener {
+                plusButton.visibility = View.VISIBLE
+                plus2Button.visibility = View.VISIBLE
+                plus3Button.visibility = View.VISIBLE
+                plus4Button.visibility = View.VISIBLE
+                plus5Button.visibility = View.VISIBLE
+                minusButton.visibility = View.VISIBLE
+                clearButton.visibility = View.VISIBLE
+                kakeruButton.visibility = View.VISIBLE
+                specialButton.text = "special"
+                count = 0
+                textView.text = count.toString()
+                textView.setTextColor(Color.WHITE)
+                bombAnimation.visibility = View.INVISIBLE
+
+            }
+
+
         }
 
 
         minusButton.setOnClickListener{
             count -= 1
             textView.text = count.toString()
+
+            minusButton.visibility = View.INVISIBLE
+
 
         }
 
@@ -66,6 +337,62 @@ class MainActivity : AppCompatActivity() {
         kakeruButton.setOnClickListener {
             count = count*2
             textView.text = count.toString()
+
+            kakeruButton.visibility = View.INVISIBLE
+
+            if (count >= 18) {
+                Log.d("count", count.toString())
+                textView.setTextColor(Color.RED)
+
+            }
+            if(count == 19){
+                Log.d("count", count.toString())
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                clearButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+
+            }
+            if(count >= 20){
+                textView.textSize = 150.0F
+                plusButton.visibility = View.INVISIBLE
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                bombAnimation.visibility = View.VISIBLE
+                clearButton.text = "もう一回！"
+                clearButton.visibility = View.VISIBLE
+
+            }
+
+
+            clearButton.setOnClickListener {
+                plusButton.visibility = View.VISIBLE
+                plus2Button.visibility = View.VISIBLE
+                plus3Button.visibility = View.VISIBLE
+                plus4Button.visibility = View.VISIBLE
+                plus5Button.visibility = View.VISIBLE
+                minusButton.visibility = View.VISIBLE
+                specialButton.visibility = View.VISIBLE
+                kakeruButton.visibility = View.VISIBLE
+                clearButton.text = "clear"
+                count = 0
+                textView.text = count.toString()
+                textView.setTextColor(Color.WHITE)
+                bombAnimation.visibility = View.INVISIBLE
+
+            }
+
+
+
         }
 
         specialButton.setOnClickListener {
@@ -76,45 +403,63 @@ class MainActivity : AppCompatActivity() {
             textView.text = count.toString()
 
             specialButton.visibility = View.INVISIBLE
+
+            if (count >= 18) {
+                Log.d("count", count.toString())
+                textView.setTextColor(Color.RED)
+
+            }
+            if(count == 19){
+                Log.d("count", count.toString())
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                clearButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+
+            }
+            if(count >= 20){
+                textView.textSize = 150.0F
+                plusButton.visibility = View.INVISIBLE
+                plus2Button.visibility = View.INVISIBLE
+                plus3Button.visibility = View.INVISIBLE
+                plus4Button.visibility = View.INVISIBLE
+                plus5Button.visibility = View.INVISIBLE
+                minusButton.visibility = View.INVISIBLE
+                specialButton.visibility = View.INVISIBLE
+                kakeruButton.visibility = View.INVISIBLE
+                bombAnimation.visibility = View.VISIBLE
+                clearButton.text = "もう一回！"
+                clearButton.visibility = View.VISIBLE
+
+            }
+
+
+            clearButton.setOnClickListener {
+                plusButton.visibility = View.VISIBLE
+                plus2Button.visibility = View.VISIBLE
+                plus3Button.visibility = View.VISIBLE
+                plus4Button.visibility = View.VISIBLE
+                plus5Button.visibility = View.VISIBLE
+                minusButton.visibility = View.VISIBLE
+                specialButton.visibility = View.VISIBLE
+                kakeruButton.visibility = View.VISIBLE
+                clearButton.text = "clear"
+                count = 0
+                textView.text = count.toString()
+                textView.setTextColor(Color.WHITE)
+                bombAnimation.visibility = View.INVISIBLE
+
+            }
+
+
+
         }
 
 
-        if (count >= 18) {
-            Log.d("count", count.toString())
-            textView.setTextColor(Color.RED)
-        }
-
-
-
-//        }else if(count == 19){
-//            plus2Button.visibility = View.INVISIBLE
-//            plus3Button.visibility = View.INVISIBLE
-//            plus4Button.visibility = View.INVISIBLE
-//            plus5Button.visibility = View.INVISIBLE
-//            minusButton.visibility = View.INVISIBLE
-//            clearButton.visibility = View.INVISIBLE
-//            kakeruButton.visibility = View.INVISIBLE
-//            specialButton.visibility = View.INVISIBLE
-//
-//        }
-
-
-
-
-
-
-
-
-
-//        if(count%3 == 0){
-//            textView.setTextColor(Color.GREEN)
-//        }else if(count%5 == 0){
-//            textView.setTextColor(Color.BLUE)
-//        }else if(count%15 == 0){
-//            textView.setTextColor(Color.RED)
-//        }else{
-//            textView.setTextColor(Color.BLACK)
-//        }
 
 
     }
